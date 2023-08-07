@@ -52,6 +52,13 @@ return {
     servers = {
       -- "pyright"
     },
+    capabilities = {
+      workspace = {
+        didChangeWatchedFiles = {
+          dynamicRegistration = true,
+        },
+      },
+    },
   },
 
   -- Configure require("lazy").setup() options
