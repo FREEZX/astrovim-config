@@ -72,10 +72,30 @@ return {
     },
   },
 
+  {
+    "nvim-telescope/telescope.nvim",
+    config = function()
+      require("telescope").setup {
+        defaults = {
+          path_display = {
+            "shorten",
+          },
+        },
+      }
+    end,
+  },
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    -- Moving lines
+    -- vim.keymap.set("n", "<A-j>", ":m .+1<CR>", { noremap = true })
+    -- vim.keymap.set("n", "<A-k>", ":m .-2<CR>", { noremap = true })
+    -- vim.keymap.set("i", "<A-j>", "<Esc>:m .+1<CR>gi", { noremap = true })
+    -- vim.keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>gi", { noremap = true })
+    -- vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv", { noremap = true })
+    -- vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv", { noremap = true })
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
