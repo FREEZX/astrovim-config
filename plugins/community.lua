@@ -8,5 +8,7 @@ return {
   { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.project.project-nvim" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.debugging.telescope-dap-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
