@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
